@@ -20,3 +20,23 @@ Design OO food delivery app catering to use cases -
 8) User can cancel the order 
 	
 9) User pays for the order
+
+
+______________________________________
+
+Soulution:
+
+Design Patterns involved in the design of this app:
+
+
+1) Builder Design Pattern (For adding food item and ordering)
+
+2) Interpreter Design Pattern (User can Search Different restaurant)
+
+3) Iterator Pattern (User Sees Menu)
+
+4) Observer Pattern (Track an order in Real Time)
+
+
+5) (Command Design Pattern) Order and cancellation of Food
+
