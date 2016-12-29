@@ -10,6 +10,15 @@ namespace FoodDeliveryApp.FoodDeliveryDriver
 {
     public class MealOrderDriver
     {
+        /// <summary>
+        /// This driver called Command Design Pattern
+        /// </summary>
+        /// <param name="selectedMealItems"></param>
+        /// <param name="totalCost"></param>
+        /// <param name="restaurantId"></param>
+        /// <param name="orderId"></param>
+        /// <param name="user"></param>
+        /// <returns></returns>
         public char MealOrderByUser(List<FoodMenuModel> selectedMealItems, double totalCost, string restaurantId, out string orderId, out UserModel user)
         {
             Console.WriteLine(string.Empty);

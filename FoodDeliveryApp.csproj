@@ -47,6 +47,7 @@
     <Compile Include="FoodBuilding\MealBuilder.cs" />
     <Compile Include="FoodDeliveryAppModel\UserModel.cs" />
     <Compile Include="FoodDeliveryDriver\MealBuilderDriver.cs" />
+    <Compile Include="FoodDeliveryDriver\MealMenuIteratorDriver.cs" />
     <Compile Include="FoodDeliveryDriver\MealOrderDriver.cs" />
     <Compile Include="FoodDeliveryDriver\MealSelectorDriver.cs" />
     <Compile Include="FoodDeliveryDriver\OrderTrackingDriver.cs" />
@@ -66,7 +67,7 @@
     <Compile Include="RestaurantSearch\AbstractExpression.cs" />
     <Compile Include="RestaurantSearch\RestaurantLocationExpression.cs" />
     <Compile Include="RestaurantSearch\RestaurantSearchClient.cs" />
-    <Compile Include="RestaurantSearch\RestaurantSearchDriver.cs" />
+    <Compile Include="FoodDeliveryDriver\RestaurantSearchDriver.cs" />
     <Compile Include="RestaurantWebService\FoodMenuService.cs" />
     <Compile Include="RestaurantWebService\RestaurantService.cs" />
     <Compile Include="Tracking\Customers.cs" />

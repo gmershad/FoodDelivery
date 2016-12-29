@@ -11,6 +11,13 @@ namespace FoodDeliveryApp.FoodDeliveryDriver
 {
     public class OrderTrackingDriver
     {
+        /// <summary>
+        /// This Driver used Observer Design Pattern
+        /// </summary>
+        /// <param name="restaurantId"></param>
+        /// <param name="orderId"></param>
+        /// <param name="user"></param>
+        /// <param name="cancel"></param>
         public void OrderTrackingByUser(string restaurantId, string orderId, UserModel user, char cancel)
         {
             //Order Tracking.

@@ -10,6 +10,11 @@ namespace FoodDeliveryApp.FoodDeliveryDriver
 {
     public class MealBuilderDriver
     {
+        /// <summary>
+        /// This driver called that module which followed Builder Design Pattern
+        /// </summary>
+        /// <param name="selectedMealItems"></param>
+        /// <returns></returns>
         public double BuildMealForUser(List<FoodMenuModel> selectedMealItems)
         {
             Console.WriteLine();

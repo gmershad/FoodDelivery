@@ -30,8 +30,8 @@ namespace FoodDeliveryApp
             #region User Sees Food Menu
 
             //User sees Food Menu Items based on the selected Restaurant Id.
-            Waitress waitress = new Waitress(restaurantId);
-            var foodMenu = waitress.PrintFoodMenu();
+            MealMenuIteratorDriver mealMenuIteratorDriver = new MealMenuIteratorDriver();
+           var foodMenu = mealMenuIteratorDriver.PrintMealMenu(restaurantId);
 
             #endregion
 
