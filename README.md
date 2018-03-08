@@ -40,3 +40,5 @@ Design Patterns involved in the design of this app:
 
 5) (Command Design Pattern) Order and cancellation of Food
 
+
+![img](https://github.com/gmershad/FoodDeliveryApp/blob/master/7.png)
