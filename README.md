@@ -44,3 +44,7 @@ Design Patterns involved in the design of this app:
 ![img](https://github.com/gmershad/FoodDeliveryApp/blob/master/7.png)
 
 ![img](https://github.com/gmershad/FoodDeliveryApp/blob/master/Group%20by%20ProjectGraph.png)
+
+![img](https://github.com/gmershad/FoodDeliveryApp/blob/master/Dependencies%20Graph1.png)
+
+![img](https://github.com/gmershad/FoodDeliveryApp/blob/master/Aggregation%20Dependencies%20Graph.png)
