@@ -21,6 +21,8 @@ Design OO food delivery app catering to use cases -
 	
 9) User pays for the order
 
+10) Calculation of Tax based on the type of Restraunt
+
 
 ______________________________________
 
@@ -39,6 +41,8 @@ Design Patterns involved in the design of this app:
 
 
 5) (Command Design Pattern) Order and cancellation of Food
+
+6) (Strategy Design Pattern) Calculation of Tax based on the type of Restraunt
 
 
 ![img](https://github.com/gmershad/FoodDeliveryApp/blob/master/7.png)
