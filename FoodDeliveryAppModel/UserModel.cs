@@ -1,20 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace FoodDeliveryApp.FoodDeliveryAppModel
+﻿namespace FoodDeliveryApp.FoodDeliveryAppModel
 {
     public class UserModel
     {
-        public String UserId { get; set; }
+        public string UserId { get; set; }
 
-        public String UserName { get; set; }
+        public string UserName { get; set; }
 
-        public String PhoneNumber { get; set; }
+        public string PhoneNumber { get; set; }
 
-        public String Address { get; set; }
+        public string Address { get; set; }
 
         public double Amount { get; set; }
     }

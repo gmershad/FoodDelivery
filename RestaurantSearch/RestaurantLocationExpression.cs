@@ -3,14 +3,12 @@ using FoodDeliveryApp.RestaurantWebService;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FoodDeliveryApp.RestaurantSearch
 {
     public class RestaurantLocationExpression : AbstractExpression
     {
-        private String searchString;
+        private readonly String searchString;
 
         public RestaurantLocationExpression(String searchString)
         {
@@ -20,10 +18,8 @@ namespace FoodDeliveryApp.RestaurantSearch
         {
             List<RestaurantModel> restaurants = context.GetAllRestaurants();
 
-            List<RestaurantModel> restaurantResult = new List<RestaurantModel>();
             var result = restaurants.Where(e => e.Address.Contains(this.searchString));
-
-            if (result != null) restaurantResult = result.ToList();
+            var restaurantResult = result.ToList();
 
             return restaurantResult;
         }

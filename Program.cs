@@ -1,15 +1,6 @@
 ﻿using FoodDeliveryApp.FoodDeliveryAppModel;
-using FoodDeliveryApp.OrderAndCancellation;
-using FoodDeliveryApp.Ordering;
-using FoodDeliveryApp.RestaurantFoodMenu;
 using FoodDeliveryApp.RestaurantSearch;
-using FoodDeliveryApp.Tracking;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Threading;
 using FoodDeliveryApp.FoodDeliveryDriver;
 
 namespace FoodDeliveryApp

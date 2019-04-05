@@ -1,15 +1,10 @@
-﻿using FoodDeliveryApp.Ordering;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace FoodDeliveryApp.OrderAndCancellation
 {
     public class Customer
     {
-        List<IFoodOrderCommands> orderList = new List<IFoodOrderCommands>();
+        readonly List<IFoodOrderCommands> orderList = new List<IFoodOrderCommands>();
 
         public void TakeOrder(IFoodOrderCommands order)
         {

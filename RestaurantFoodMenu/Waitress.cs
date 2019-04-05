@@ -2,15 +2,12 @@
 using FoodDeliveryApp.FoodMenu;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FoodDeliveryApp.RestaurantFoodMenu
 {
     public class Waitress
     {
-        private string restaurantId;
+        private readonly string restaurantId;
         FoodMenu foodMenu;
         public Waitress(string restaurantId)
         {

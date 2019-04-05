@@ -2,9 +2,7 @@
 using FoodDeliveryApp.Ordering;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using FoodDeliveryApp.FoodCostTaxCalculation;
 
 namespace FoodDeliveryApp.FoodDeliveryDriver
 {
@@ -23,9 +21,15 @@ namespace FoodDeliveryApp.FoodDeliveryDriver
             MealBuilder mealBuilder = new MealBuilder();
             mealBuilder.PrepareMeal(selectedMealItems);
             mealBuilder.meal.ShowItems();
-            var totalCost = mealBuilder.meal.GetCost();
-            Console.WriteLine("Total Cost(Rs.): {0}", totalCost);
-            return totalCost;
+            var foodCost = mealBuilder.meal.GetCost();
+            
+            //Calculation of Tax
+            var taxCalculationContext = new TaxCalculationContext(new OneStarTaxCalculator());
+            var taxAmount = taxCalculationContext.GetCalculatedTax(foodCost, 0.05, false);
+            var totalCostofFood = foodCost + taxAmount;
+            Console.WriteLine("Total Cost(Rs.): {0}", totalCostofFood);
+            Console.WriteLine("Total Tax(Rs.): {0}", taxAmount);
+            return totalCostofFood;
         }
     }
 }

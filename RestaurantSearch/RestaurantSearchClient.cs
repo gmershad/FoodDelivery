@@ -2,15 +2,12 @@
 using FoodDeliveryApp.RestaurantWebService;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FoodDeliveryApp.RestaurantSearch
 {
     public class RestaurantSearchClient
     {
-        private InterpreterContext context;
+        private readonly InterpreterContext context;
 
         public RestaurantSearchClient(InterpreterContext context)
         {
@@ -24,9 +21,8 @@ namespace FoodDeliveryApp.RestaurantSearch
             String searchType = stringParts[0];
             String searchAttribute = stringParts[2];
 
-            var startIndex = expression.IndexOf("'");
-            var lastIndex = expression.LastIndexOf("'");
-            var length = expression.Length;
+            var startIndex = expression.IndexOf("'", StringComparison.Ordinal);
+            var lastIndex = expression.LastIndexOf("'", StringComparison.Ordinal);
             String query = expression.Substring(startIndex+1, lastIndex - startIndex-1);
 
             if (searchType.Equals("restaurant") && searchAttribute.Equals("location"))

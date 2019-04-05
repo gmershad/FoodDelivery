@@ -2,8 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FoodDeliveryApp.FoodDeliveryDriver
 {
@@ -23,7 +21,7 @@ namespace FoodDeliveryApp.FoodDeliveryDriver
             {
                 Console.WriteLine("Enter food Id:");
                 var foodId = Console.ReadLine();
-                var foodItem = foodMenu.Where(e => e.FoodId == foodId).FirstOrDefault();
+                var foodItem = foodMenu.FirstOrDefault(e => e.FoodId == foodId);
                 if (foodItem != null)
                 {
                     Console.WriteLine("You Selected Below food Item:");

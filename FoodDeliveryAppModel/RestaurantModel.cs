@@ -1,39 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace FoodDeliveryApp.FoodDeliveryAppModel
+﻿namespace FoodDeliveryApp.FoodDeliveryAppModel
 {
     public class RestaurantModel
     {
-        private string restaurantId;
-        public string RestaurantId
-        {
-            get { return restaurantId; }
-            set { restaurantId = value; }
-        }
+        public string RestaurantId { get; set; }
 
-        private string name;
-        public string Name
-        {
-            get { return name; }
-            set { name = value; }
-        }
+        public string Name { get; set; }
 
-        private string address;
-        public string Address
-        {
-            get { return address; }
-            set { address = value; }
-        }
+        public string Address { get; set; }
 
-        private int rating;
-        public int Rating
-        {
-            get { return rating; }
-            set { rating = value; }
-        }
+        public int Rating { get; set; }
     }
 }

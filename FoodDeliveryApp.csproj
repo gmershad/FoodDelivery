@@ -41,6 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FoodCostTaxCalculation\ITaxCalculator.cs" />
+    <Compile Include="FoodCostTaxCalculation\OneStarTaxCalculator.cs" />
+    <Compile Include="FoodCostTaxCalculation\TaxCalculationContext.cs" />
+    <Compile Include="FoodCostTaxCalculation\ThreeStarTaxCalculator.cs" />
+    <Compile Include="FoodCostTaxCalculation\TwoStarTaxCalculator.cs" />
     <Compile Include="FoodDeliveryAppModel\FoodMenuModel.cs" />
     <Compile Include="FoodDeliveryAppModel\RestaurantModel.cs" />
     <Compile Include="FoodBuilding\Meal.cs" />
@@ -74,6 +79,7 @@
     <Compile Include="Tracking\FoodDelivery.cs" />
     <Compile Include="Tracking\ICustomers.cs" />
     <Compile Include="Tracking\Restaurant.cs" />
+    <Compile Include="Utils\TaxUtil.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

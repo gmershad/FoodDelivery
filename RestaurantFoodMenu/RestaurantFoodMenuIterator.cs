@@ -1,34 +1,28 @@
 ﻿using FoodDeliveryApp.FoodDeliveryAppModel;
 using FoodDeliveryApp.FoodMenu;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FoodDeliveryApp.RestaurantFoodMenu
 {
     public class RestaurantFoodMenuIterator : IIterator
     {
-        List<FoodMenuModel> items;
-        int position = 0;
+        readonly List<FoodMenuModel> foodItems;
+        int position;
 
-        public RestaurantFoodMenuIterator(List<FoodMenuModel> items)
+        public RestaurantFoodMenuIterator(List<FoodMenuModel> foodItems)
         {
-            this.items = items;
+            this.foodItems = foodItems;
         }
 
-        public bool HasNext()
-        {
-            if (position >= items.Count || items[position] == null)
+        public bool HasNext() {
+            if (position >= foodItems.Count || foodItems[position] == null)
                 return false;
-            else
-                return true;
+            return true;
         }
 
         public object Next()
         {
-            FoodMenuModel menuItem = items[position];
+            FoodMenuModel menuItem = foodItems[position];
             position = position + 1;
             return menuItem;
         }

@@ -1,15 +1,12 @@
 ﻿using FoodDeliveryApp.FoodDeliveryAppModel;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FoodDeliveryApp.Ordering
 {
     public class Meal
     {
-        private List<FoodMenuModel> foodItems = new List<FoodMenuModel>();
+        private readonly List<FoodMenuModel> foodItems = new List<FoodMenuModel>();
 
         public void AddFoodItem(List<FoodMenuModel> items)
         {

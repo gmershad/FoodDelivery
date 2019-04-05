@@ -1,9 +1,5 @@
 ﻿using FoodDeliveryApp.FoodDeliveryAppModel;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FoodDeliveryApp.Tracking
 {
@@ -13,12 +9,7 @@ namespace FoodDeliveryApp.Tracking
         #region Properties
 
         private UserModel userModel;
-        private Restaurant restaurant;
-        public Restaurant Restaurant
-        {
-            get { return restaurant; }
-            set { restaurant = value; }
-        }
+        public Restaurant Restaurant { get; set; }
 
         #endregion
 

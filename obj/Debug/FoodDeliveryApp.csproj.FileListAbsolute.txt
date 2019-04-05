@@ -4,3 +4,9 @@ E:\Study Library\Application Design\Design Patterns\FoodDeliveryApp\bin\Debug\Fo
 E:\Study Library\Application Design\Design Patterns\FoodDeliveryApp\obj\Debug\FoodDeliveryApp.csprojResolveAssemblyReference.cache
 E:\Study Library\Application Design\Design Patterns\FoodDeliveryApp\obj\Debug\FoodDeliveryApp.exe
 E:\Study Library\Application Design\Design Patterns\FoodDeliveryApp\obj\Debug\FoodDeliveryApp.pdb
+D:\Books\MyGithub\bin\Debug\FoodDeliveryApp.exe.config
+D:\Books\MyGithub\obj\Debug\FoodDeliveryApp.exe
+D:\Books\MyGithub\obj\Debug\FoodDeliveryApp.pdb
+D:\Books\MyGithub\bin\Debug\FoodDeliveryApp.exe
+D:\Books\MyGithub\bin\Debug\FoodDeliveryApp.pdb
+D:\Books\MyGithub\obj\Debug\FoodDeliveryApp.csprojResolveAssemblyReference.cache

@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FoodDeliveryApp.Tracking
 {
@@ -13,21 +10,11 @@ namespace FoodDeliveryApp.Tracking
     {
         #region Properties
 
-        private List<ICustomers> _customers = new List<ICustomers>();
+        private readonly List<ICustomers> _customers = new List<ICustomers>();
 
-        private string orderId;
-        public string OrderId
-        {
-            get { return orderId; }
-            set { orderId = value; }
-        }
+        public string OrderId { get; set; }
 
-        private string restaurantId;
-        public string RestaurantId
-        {
-            get { return restaurantId; }
-            set { restaurantId = value; }
-        }
+        public string RestaurantId { get; set; }
 
         private string deliveryStatus;
         public string DeliveryStatus
@@ -52,10 +39,10 @@ namespace FoodDeliveryApp.Tracking
 
         #region Constructor
 
-        public FoodDelivery(string restaurantId, string orderId, string deliveryStatus)
+        protected FoodDelivery(string restaurantId, string orderId, string deliveryStatus)
         {
-            this.restaurantId = restaurantId;
-            this.orderId = orderId;
+            this.RestaurantId = restaurantId;
+            this.OrderId = orderId;
             this.deliveryStatus = deliveryStatus;
         }
 
